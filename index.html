@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'" />
+  <link href="style.css" rel="stylesheet" />
+  <title>medo khder</title>
+
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1 class="title"> واجه بسيطه لاداره بعض البيانات </h1>
+    </div>
+    <div class="container">
+      <div class="left">
+        <h4 style="margin:unset;font-size:30px;">
+          <input id="serbtn"   type="text" dir="rtl" style="width: 200px; height: 15px; font-size: 20px; padding: 10px;" placeholder="searchInput" />
+          البحث بالاسم
+        </h4>
+        <hr width="400px">
+        <!-- <table>
+          <thead>
+          <th>الوزن </th>
+          <th>الطول </th>
+          <th>العنوان </th>
+          <th>رقم الهاتف</th>
+          <th>الاسم </th>
+          <th>id</th>
+        </thead> -->
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th>الوزن </th>
+              <th>الطول </th>
+              <th>العنوان </th>
+              <th>رقم الهاتف</th>
+              <th>الاسم </th>
+              <th>id</th>
+            </tr>
+          </thead>
+          <tbody id="content">
+            <!-- <tr>
+              <td>50</td>
+              <td>160</td>
+              <td>افلاقه</td>
+              <td>01014115733</td>
+              <td>محمد شعبان السعيد خضر</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>50</td>
+              <td>102</td>
+              <td>الزقل</td>
+              <td>01063337801</td>
+              <td> منه الله شعبان السعيد خضر </td>
+              <td>1</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <div class="right">
+        <h1 style="margin: unset">الجزء اليمين</h1>
+        <h4 id="id" style="margin: unset">id</h4>
+        <input id="idi" type="number" dir="rtl" style="font-size: 20px; font: bold;" />
+        <h4 id="name" style="margin: unset">الاسم</h4>
+        <input id="namei" type="text" dir="rtl" style="font-size: 20px; font: bold;" />
+        <h4 id="phone" style="margin: unset">رقم الهاتف</h4>
+        <input id="phonei" type="text" dir="rtl" style="font-size: 20px;font: bold;" />
+        <h4 id="elenwan" style="margin: unset">العنوان</h4>
+        <input id="elenwani" type="text" dir="rtl" style="font-size: 20px;font: bold;" />
+        <h4 id="height" style="margin: unset">الطول</h4>
+        <input id="heighti" type="text" dir="rtl" style="font-size: 20px;font: bold;" />
+        <h4 id="width" style="margin: unset">الوزن</h4>
+        <input id="widthi" type="text" dir="rtl" style="font-size: 20px;font: bold;" />
+        <hr width="100px">
+        <div class="right-down">
+          <h1 style="margin: unset;margin-top: 5px;"> الجزء السفلى الازرار</h1>
+          <button id="addButton"> اضافه </button>
+          <button id="edit"> التعديل </button>
+          <button id="dlete"> الحذف </button>
+          <button id="ser"> البحث </button>
+          <!-- <button>  </button> -->
+          <hr width="100px">
+          <div>
+          </div>
+        </div>
+      </div>
+      <!-- You can also require other files to run in this process -->
+      <!-- <script src="./script.js"></script> -->
+      <script src="style.js"></script>
+</body>
+
+</html>
